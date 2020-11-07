@@ -1,0 +1,104 @@
+// Colors
+$color-fg: #aaaaaa;
+$color-fg-l: lighten($color-fg, 10%);
+$color-fg-d: darken($color-fg, 10%);
+$color-bg: #222222;
+$color-bg-l: lighten($color-bg, 10%);
+$color-bg-d: darken($color-bg, 10%); //#090909
+$color-ac: #aaaadd;
+$color-ac-l: lighten($color-ac, 10%);
+$color-ac-d: darken($color-ac, 10%);
+
+// mixins
+@mixin headings {
+  h1, h2, h3, h4, h5, h6 {
+    @content;
+  }
+}
+
+// General Page Formatting
+html {
+  font-family: Arial;
+  color: $color-fg;
+  background-color: $color-bg;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// Component/Page-specific classes
+
+.main {
+  background-color: $color-bg-d;
+  color: $color-fg;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 75px;
+  border-bottom: 5px solid $color-ac;
+
+  .title {
+    color: $color-ac;
+    margin-left: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    %a-main {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.current {
+      @extend %a-main;
+
+      &:link, &:visited {
+        color: $color_fg_l;
+      }
+
+      &:hover {
+        color: $color_fg_l;
+      }
+   }
+
+   a.not-current {
+      @extend %a-main;
+
+      &:link, &:visited {
+        color: $color_fg;
+      }
+
+      &:hover {
+        color: $color_fg_l;
+      }
+   }
+}
+
+
+}
+
+footer {
+  background-color: $color-bg-d;
+  color: $color-fg;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 75px;
+  width: 100%;
+  border-top: 5px solid $color-ac;
+  margin-top: 20px;
+}
+
