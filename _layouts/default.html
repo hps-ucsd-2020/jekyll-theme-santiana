@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body class="no-margin">
+  {% include header.html %}
+  <div class={{ page.bodyclass | default: "content-default" }}>
+  {{ content }}
+  </div>
+  {% include footer.html %}
+</body>
+</html>
