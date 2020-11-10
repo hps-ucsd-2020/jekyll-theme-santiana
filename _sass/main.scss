@@ -18,9 +18,16 @@ $color-ac-d: darken($color-ac, 10%);
 
 // General Page Formatting
 html {
+  height: 100%;
   font-family: Arial;
   color: $color-fg;
   background-color: $color-bg;
+}
+
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .no-margin {
@@ -30,6 +37,7 @@ html {
 // Component/Page-specific classes
 
 header {
+  flex-shrink: 0;
   background-color: $color-bg-d;
   color: $color-fg;
   text-align: center;
@@ -69,9 +77,9 @@ header {
       &:hover {
         color: $color_fg_l;
       }
-   }
+    }
 
-   a.not-current {
+    a.not-current {
       @extend %a-main;
 
       &:link, &:visited {
@@ -81,13 +89,16 @@ header {
       &:hover {
         color: $color_fg_l;
       }
-   }
+    }
+  }
 }
 
-
+.content-default{
+  flex: 1 0 auto;
 }
 
 footer {
+  flex-shrink: 0;
   background-color: $color-bg-d;
   color: $color-fg;
   text-align: center;
