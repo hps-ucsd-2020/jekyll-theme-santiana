@@ -1,0 +1,18 @@
+// General Page Formatting
+html {
+  height: 100%;
+  font-family: Arial;
+  color: $color-fg;
+  background-color: $color-bg;
+}
+
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-margin {
+  margin: 0;
+}
+

@@ -1,40 +1,4 @@
-// Colors
-$color-fg: #dddddd;
-$color-fg-l: lighten($color-fg, 10%);
-$color-fg-d: darken($color-fg, 10%);
-$color-bg: #003f88;
-$color-bg-l: lighten($color-bg, 10%);
-$color-bg-d: darken($color-bg, 10%); //#090909
-$color-ac: #fdc500;
-$color-ac-l: lighten($color-ac, 10%);
-$color-ac-d: darken($color-ac, 10%);
-
-// mixins
-@mixin headings {
-  h1, h2, h3, h4, h5, h6 {
-    @content;
-  }
-}
-
-// General Page Formatting
-html {
-  height: 100%;
-  font-family: Arial;
-  color: $color-fg;
-  background-color: $color-bg;
-}
-
-body{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-// Component/Page-specific classes
+// styles for components on site
 
 header {
   flex-shrink: 0;
@@ -116,3 +80,11 @@ footer {
   margin-top: 20px;
 }
 
+.flex-list {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
