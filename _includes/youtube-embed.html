@@ -1,3 +1,10 @@
+<!--
+USAGE
+
+{% include youtube-embed.html video-id="video_id" %}
+video_id: the last part of the youtube url you want to use (e.g., fC7oUOUEEi4)
+-->
+
 <div class="youtube-embed" id="yt-embed-{{ include.video-id | default: "fC7oUOUEEi4" }}"></div>
 <script async src="https://www.youtube.com/iframe_api"></script>
 <script>

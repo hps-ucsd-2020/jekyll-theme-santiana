@@ -1,0 +1,14 @@
+<!-- 
+Usage:
+
+{% include flex-list.html data=my_data element="element-include.html" %}
+my_data: data for the elements in the list; format should be compatible with the element include
+element-include: html for each individual element (should be in the _includes folder). Should be compatible
+                  with the data being passed in.
+-->
+<div class="{{ include.style | default: "flex-list" }}">
+  {% for item in include.data %}
+    {% include {{ include.element }} e=item %}
+  {% endfor %}
+</div>
+
