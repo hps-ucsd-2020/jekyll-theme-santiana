@@ -3,9 +3,9 @@
     <h1>{{ site.title }}</h1>
   </div>
   <div class="navbar">
-    {% for item in site.data.main_nav %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% else %}class="not-current"{% endif %}>
-      {{ item.name }}
+    {% for item in site.data.nav_pages %}
+    <a href="{{ item }}.html" {% if page.title == item %}class="current"{% else %}class="not-current"{% endif %}>
+      {{ item }}
     </a>
   {% endfor %}
   </div>
