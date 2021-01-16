@@ -2,4 +2,9 @@
 layout: default
 title: Features
 ---
-{% include flex-list.html data=site.data.features element="features-e.html" %}
+<div class="flex-list">
+  {% for item in site.data.features %}
+    {% include feature-e.html %}
+  {% endfor %}
+</div>
+{% include flex-list.html data=site.data.features element="feature-e.html" %}
