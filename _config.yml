@@ -15,7 +15,8 @@ homepage: "/Home.html"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-remote_theme: hps-ucsd-2020/jekyll-theme-santiana@main
+  - jekyll-optional-front-matter
+# remote_theme: hps-ucsd-2020/jekyll-theme-santiana@main
 
 # Github required settings
 lsi: false
@@ -24,10 +25,15 @@ incremental: false
 highlighter: rouge
 gist:
   noscript: false
+markdown: kramdown
+highlighter: rouge
 kramdown:
+  input: GFM
   math_engine: mathjax
   syntax_highlighter: rouge
 
+include:
+  - wiki
 exclude:
   - lightslider/README.md
 
@@ -36,4 +42,6 @@ defaults:
   scope:
     path: "wiki"
   values:
+    output: true
     layout: "wikipage"
+    permalink: /wiki/:basename
