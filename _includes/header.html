@@ -4,7 +4,7 @@
   </div>
   <div class="navbar">
     {% for item in site.data.nav_pages %}
-    <a href="{{ item }}.html" {% if page.title == item %}class="current"{% else %}class="not-current"{% endif %}>
+    <a href="/{{ item }}.html" {% if page.title == item %}class="current"{% else %}class="not-current"{% endif %}>
       {{ item }}
     </a>
   {% endfor %}
