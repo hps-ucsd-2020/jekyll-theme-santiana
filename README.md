@@ -7,3 +7,4 @@ Jekyll Website Theme for the HPS UCSD Website
 - build: runs `bundle exec jekyll build`, compiling the site once
 - serve: runs `bundle exec jekyll serve`, compiling and hosting the site
 - clean: deletes the build jekyll site at \_site
+- install: runs `bundle install`, getting all the gems needed to run the site
