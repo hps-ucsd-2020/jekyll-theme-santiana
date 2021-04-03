@@ -98,5 +98,36 @@ footer {
   margin-right: auto;
   margin-top: 0;
   background-color: $color-bg-d;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .inline_toc{
+    border-top: 2px solid $color-ac;
+    border-bottom: 2px solid $color-ac;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  ::marker{
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:link, &:visited {
+      color: $color_ac;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include headings{
+    color: $color_ac;
+  }
+  
+
 }
 
