@@ -1,0 +1,10 @@
+<div class="content-box">
+  <div class="box-title">
+    <h2>{{ include.data.title }}</h2>
+  </div>
+  <div class="box-body">
+    {% for paragraph in include.data.paragraphs %}
+      <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+</div>

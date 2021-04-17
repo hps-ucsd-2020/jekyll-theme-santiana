@@ -89,6 +89,29 @@ footer {
   align-content: space-between;
 }
 
+.content-box {
+  background-color = $color-bg-d;
+  border-radius: 12px;
+  margin-bottom: 10px;
+
+  .box-title {
+    background-color: $color-ac;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .box-title h2 {
+    color: $imperialblue-light;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .box-body {
+    padding: 0 10px 3px;
+  }
+
+}
+
 .wikicontent {
   overflow: auto;
   max-width: 700px;
