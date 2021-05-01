@@ -33,4 +33,4 @@ var sjs = SimpleJekyllSearch({
     limit: 20,
     fuzzy: false,
     exclude: []
-  })
+})

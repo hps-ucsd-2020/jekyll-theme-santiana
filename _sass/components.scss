@@ -26,6 +26,7 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: center;
 
     %a-main {
       margin-left: 10px;
@@ -90,7 +91,7 @@ footer {
 }
 
 .content-box {
-  background-color = $color-bg-d;
+  background-color: $color-bg-d;
   border-radius: 12px;
   margin-bottom: 10px;
 
@@ -101,7 +102,7 @@ footer {
   }
 
   .box-title h2 {
-    color: $imperialblue-light;
+    color: $color-bg;
     padding: 5px;
     margin: 5px;
   }
@@ -152,5 +153,50 @@ footer {
   }
   
 
+}
+
+.search-bar{
+  padding-left: 10px;
+  padding-right: 20px;
+
+  input[type=text]{
+    width: 200px;
+  }
+  ul{
+    z-index: 1000;
+    position: absolute;
+    top: 31px;
+    width: 200px;
+    background-color: $color_bg_l;
+    padding-left: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: left;
+    list-style-type: none;
+  }
+  li{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    %a-main {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a {
+      @extend %a-main;
+
+      &:link, &:visited {
+        color: $color_fg;
+      }
+
+      &:hover {
+        color: $color_fg_l;
+      }
+    }
+   
+  }
 }
 
