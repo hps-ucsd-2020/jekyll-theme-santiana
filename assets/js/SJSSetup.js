@@ -10,6 +10,7 @@ is_wiki_page: false
 
 var jsondata=[
   {% for page in site.html_pages %}
+  {% if page.url contans "wiki" %}
    {
      {% assign title = page.title | default: page.name %}
      {% if title != nil %}
@@ -21,6 +22,7 @@ var jsondata=[
         "content"  : "{{ page.content | strip_html | strip_newlines | remove: '"' }}"
      {% endif %}
    } {% unless forloop.last %},{% endunless %}
+  {% endif %}
   {% endfor %}
 ];
 
