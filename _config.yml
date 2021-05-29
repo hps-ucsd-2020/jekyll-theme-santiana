@@ -10,6 +10,8 @@ twitter_username: hps-ucsd
 github_username:  hps-ucsd-2020
 
 homepage: "/Home.html"
+git_branch: "main"
+wiki_folder: "wiki"
 
 # Build settings
 plugins:

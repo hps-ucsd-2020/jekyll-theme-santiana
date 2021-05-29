@@ -165,7 +165,7 @@ footer {
   ul{
     z-index: 1000;
     position: absolute;
-    top: 31px;
+    top: 97px;
     width: 200px;
     background-color: $color_bg_l;
     padding-left: 0;
@@ -197,6 +197,24 @@ footer {
       }
     }
    
+  }
+}
+
+.wiki-subheader{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.wiki-tools{
+  span{
+    border-left: 3px solid $color-ac;
+    padding-left: 3px;
+    a{
+      margin-left: 2px;
+      margin-right: 5px;
+    }
   }
 }
 
