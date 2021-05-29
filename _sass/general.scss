@@ -10,6 +10,17 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
+  a {
+    text-decoration: none;
+
+    &:link, &:visited {
+      color: $color_ac;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .no-margin {
