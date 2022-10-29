@@ -1,0 +1,23 @@
+h6 {
+    color:#52D15E;
+}
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+}
+
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+
+#the-orange {
+    width: 90px;
+}
+
+#content {
+    height: 100vh;
+    
+}
